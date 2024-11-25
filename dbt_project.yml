@@ -34,5 +34,8 @@ models:
     # Config indicated by + and applies to all files under models/example/
     +materialized: view
     dim:
-      materialized: table
+      +materialized: table
+    src:
+      +materialized: ephemeral
+
 
